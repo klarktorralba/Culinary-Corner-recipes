@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The Culinary Corner</title>
+</head>
+<body>
+
+    <header>
+        <h1>The Culinary Corner</h1>
+        <p>Exploring fine dining from my home kitchen.</p>
+    </header>
+
+    <hr>
+
+    <nav>
+        <h3>Browse the Menu:</h3>
+        <p>
+            Check out my recipe for <strong><a href="recipes/beef-wellington.html">Beef Wellington</a></strong>.<br>
+            Try my creamy <strong><a href="recipes/shrimp-alfredo.html">Shrimp Alfredo</a></strong>.<br>
+            Or learn how to sear <strong><a href="recipes/scallops.html">Scallops on Cauliflower Purée</a></strong>.
+        </p>
+    </nav>
+
+    <hr>
+
+    <main>
+        <h3>Nutritional Estimates</h3>
+        <table border="1">
+            <tr>
+                <th>Meal</th>
+                <th>Calories</th>
+                <th>Main Protein</th>
+            </tr>
+            <tr>
+                <td>Beef Wellington</td>
+                <td>650 kcal</td>
+                <td>Beef</td>
+            </tr>
+            <tr>
+                <td>Shrimp Alfredo</td>
+                <td>800 kcal</td>
+                <td>Shrimp</td>
+            </tr>
+            <tr>
+                <td>Scallops</td>
+                <td>350 kcal</td>
+                <td>Scallops</td>
+            </tr>
+        </table>
+
+        <br>
+
+        <h3>Watch How It's Done</h3>
+        <p>Here is a quick clip of the cooking process:</p>
+        <video controls width="400">
+            <source src="cooking.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <hr>
+
+        <!-- COMPLETELY UNIQUE FEEDBACK FORM -->
+        <h3>Website Feedback</h3>
+        <p>Help me improve The Culinary Corner by leaving a review.</p>
+        
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Site Review</legend>
+                
+                <label for="reviewer_name">Name (optional):</label><br>
+                <input type="text" id="reviewer_name" name="reviewer_name"><br><br>
+
+                <label>How would you rate the recipes?</label><br>
+                <!-- Using Radio Buttons makes this entirely different from a simple text box -->
+                <input type="radio" id="rating_good" name="rating" value="good">
+                <label for="rating_good">Delicious</label><br>
+                
+                <input type="radio" id="rating_okay" name="rating" value="okay">
+                <label for="rating_okay">Just Okay</label><br>
+                
+                <input type="radio" id="rating_bad" name="rating" value="bad">
+                <label for="rating_bad">Needs Improvement</label><br><br>
+
+                <label for="feedback_msg">Tell me what you think:</label><br>
+                <textarea id="feedback_msg" name="feedback_msg" rows="4" cols="40"></textarea><br><br>
+
+                <button type="submit">Submit Review</button>
+            </fieldset>
+        </form>
+    </main>
+
+    <br>
+    <footer>
+        <p>Created by a Hungry Student. &copy; 2026.</p>
+    </footer>
+
+</body>
+</html>
